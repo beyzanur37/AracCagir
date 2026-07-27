@@ -87,4 +87,4 @@ Bu projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımlar�
 
 1. Bu depoyu klonlayın:
    ```bash
-   git clone https://github.com/KULLANICI_ADIN/AracCagir.git
+   git clone https://github.com/beyza37/AracCagir.git
