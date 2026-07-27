@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#f8f9fa">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uygulamaya Hoş Geldiniz"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#343a40"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lütfen giriş tipinizi seçin"
+        android:textSize="16sp"
+        android:textColor="#6c757d"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/btnPassenger"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#007bff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp"
+        android:elevation="4dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOLCU OLARAK DEVAM ET"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnDriver"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#28a745"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:elevation="4dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SÜRÜCÜ OLARAK DEVAM ET"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1036433620974",
+    "project_id": "arac-cagir",
+    "storage_bucket": "arac-cagir.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036433620974:android:e16263b1ae72df611598ff",
+        "android_client_info": {
+          "package_name": "com.example.araccagir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApjldMjYmoMp0P8PJ-In6_Dye5tnJ2MQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#f8f9fa">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adım 2: Kişisel Bilgiler"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#343a40"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Placeholder for Profile Picture -->
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#e0e0e0"
+        android:src="@android:drawable/ic_menu_camera"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Profil Fotoğrafı Ekle"
+        android:textColor="#007BFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Ad ve Soyad"
+        android:inputType="textPersonName"
+        android:background="#ffffff"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cinsiyet"
+        android:textSize="16sp"
+        android:textColor="#6c757d"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp">
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kadın"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Erkek"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="UYGULAMAYA GİR"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#000000"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

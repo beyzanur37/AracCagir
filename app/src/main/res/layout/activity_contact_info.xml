@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#f8f9fa">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adım 1: İletişim Bilgileri"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#343a40"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffff"
+        android:elevation="2dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="+90"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:background="#eeeeee"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:hint="5XX XXX XX XX"
+            android:inputType="phone"
+            android:background="@null"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="E-Posta Adresi"
+        android:inputType="textEmailAddress"
+        android:background="#ffffff"
+        android:padding="12dp"
+        android:layout_marginBottom="40dp"
+        android:elevation="2dp" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="DEVAM"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#000000"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

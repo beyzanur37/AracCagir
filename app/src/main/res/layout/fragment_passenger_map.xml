@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Nereye Gitmek İstersiniz?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#007BFF"
+        android:textColor="#ffffff" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#ffffff"
+        android:elevation="8dp">
+
+        <fragment
+            android:id="@+id/autocomplete_fragment"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yakındaki Araçlar (Demo)"
+            android:textColor="#555"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Standart Araç -->
+                <LinearLayout
+                    android:id="@+id/llVehicleStandard"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_vehicle_card"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp">
+                    <TextView android:text="🚗" android:textSize="32sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp"/>
+                    <TextView android:text="Standart" android:textColor="#333" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvStandardPrice" android:text="-- TL" android:textColor="#777" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- XL Araç -->
+                <LinearLayout
+                    android:id="@+id/llVehicleXL"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_vehicle_card"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp">
+                    <TextView android:text="🚐" android:textSize="32sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp"/>
+                    <TextView android:text="Geniş (XL)" android:textColor="#333" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvXLPrice" android:text="-- TL" android:textColor="#777" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Lüks Araç -->
+                <LinearLayout
+                    android:id="@+id/llVehicleVIP"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_vehicle_card"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp">
+                    <TextView android:text="🚙" android:textSize="32sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp"/>
+                    <TextView android:text="Lüks VIP" android:textColor="#333" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvVIPPrice" android:text="-- TL" android:textColor="#777" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btnCallVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Araç Çağır"
+            android:textSize="18sp"
+            android:backgroundTint="#000000"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Durum: Bekliyor..."
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

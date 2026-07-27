@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#f8f9fa">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cüzdan Bakiyesi"
+        android:textSize="18sp"
+        android:textColor="#6c757d"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 TL"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#343a40"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/etTopUpAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yüklenecek Tutar (TL)"
+        android:inputType="number"
+        android:background="@android:drawable/edit_text"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAddBalance"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sanal Kart ile Bakiye Yükle"
+        android:textSize="16sp"
+        android:backgroundTint="#000000"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>
